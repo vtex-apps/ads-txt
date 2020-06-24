@@ -1,6 +1,6 @@
 # Ads Txt
 
-Exposes a `/ads.txt` route that serves content configurable thourgh the app's configuration page.
+Exposes a `/ads.txt` route that serves custom content from the app's settings.
 
 To be used for Google Ads verification.
 
