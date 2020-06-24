@@ -1,7 +1,7 @@
 {
   "name": "ads-txt",
   "vendor": "vtex",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "title": "Ads Txt",
   "description": "Adds a custom ads.txt file to the root domain",
   "mustUpdateAt": "2018-01-04",
