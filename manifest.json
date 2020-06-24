@@ -2,8 +2,8 @@
   "name": "ads-txt",
   "vendor": "vtex",
   "version": "0.1.0",
-  "title": "Ads txt",
-  "description": "Reference app for VTEX IO Services",
+  "title": "Ads Txt",
+  "description": "Adds a custom ads.txt file to the root domain",
   "mustUpdateAt": "2018-01-04",
   "categories": [],
   "dependencies": {},
@@ -17,13 +17,6 @@
   "credentialType": "absolute",
   "policies": [
     {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "httpstat.us",
-        "path": "*"
-      }
-    },
-    {
       "name": "colossus-fire-event"
     },
     {
@@ -31,13 +24,18 @@
     }
   ],
   "settingsSchema": {
-    "title": "Ads txt",
+    "title": "Ads Txt Configuration",
     "type": "object",
     "properties": {
       "textContent": {
-        "title": "Text content for ads.txt file",
+        "title": "Text content for the ads.txt file",
         "type": "string"
       }
+    }
+  },
+  "settingsUiSchema": {
+    "textContent": {
+      "ui:widget": "textarea"
     }
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
